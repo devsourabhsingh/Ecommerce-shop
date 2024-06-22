@@ -58,7 +58,7 @@ const ProductDetail = () => {
   return (
     <>
       <div className="row">
-        <div className=" container">
+        <div>
           <div className=" mx-5">
             <Link to="/">
               <i className="bi bi-arrow-left-circle-fill"></i>
@@ -67,7 +67,7 @@ const ProductDetail = () => {
           {isLoading ? (
             <SkeletonEffect />
           ) : (
-            <div className=" container new-detail-shadow">
+            <div className="container new-detail-shadow">
               <div className="card mb-3 single-product-card mt-2" key={id}>
                 <div className="row g-0 mt-5">
                   <div className="col-md-4">
@@ -90,7 +90,7 @@ const ProductDetail = () => {
                       </span>
                       <div>
                         <div className=" mt-3  new-category-detail">
-                          <p className="deatil-fashion-category">{category}</p>
+                          <p className="detail-fashion-category">{category}</p>
                         </div>
                       </div>
                       <p className=" mt-3">{description}</p>

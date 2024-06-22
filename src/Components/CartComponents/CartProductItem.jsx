@@ -44,7 +44,7 @@ const CartProductItem = ({ id, image, price, category, title, newCart }) => {
           <h6 className="text-muted">{category}</h6>
           <h6 className="text-black mb-0">{title}</h6>
         </div>
-        <div className="col-md-3 col-lg-3 col-xl-2 d-flex align-items-end">
+        <div className="col-md-3 col-lg-3 col-xl-2 d-flex align-items-end price-quantity">
           <button
             className="btn btn-link px-3"
             onClick={() => handleReduceQuantity(newCart.id)}
